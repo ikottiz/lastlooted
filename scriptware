@@ -1,0 +1,8 @@
+local castlerockTime = workspace.MonsterSpawns.Triggers.CastleRockSnake:FindFirstChild("LastSpawned")
+local sunkenTime = workspace.MonsterSpawns.Triggers.evileye1:FindFirstChild("LastSpawned")
+local snakeTime = workspace.MonsterSpawns.Triggers.MazeSnakes:FindFirstChild("LastSpawned")
+
+function rconsolename("Roblox")
+function rconsoleprint("Castle Rock Last Looted: "..tostring(math.floor((os.time() - castlerockTime.Value) / 60)) .. " minutes ago..")
+function rconsoleprint("\nTundra 2 Snake Pit Last Looted: "..tostring(math.floor((os.time() - snakeTime.Value) / 60)) .. " minutes ago..")
+function rconsoleprint("\nSunken Last Looted: "..tostring(math.floor((os.time() - sunkenTime.Value) / 60)) .. " minutes ago..\n")
